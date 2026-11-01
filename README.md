@@ -433,11 +433,4 @@ The application allows users to examine crime categories, temporal distributions
 
 The project also emphasizes the importance of data provenance, preprocessing transparency, and responsible interpretation. By distinguishing recorded counts from actual crime prevalence and documenting the limitations of the dataset, it provides a practical demonstration of descriptive data analytics.
 
-Overall, the project meets the academic objective of demonstrating data preprocessing, exploratory data analysis, statistical summaries, and visualization using Python, while providing a reusable foundation for further analytical work.ides a straightforward foundation for an undergraduate descriptive analysis while keeping data limitations visible.
-
-## References
-
-City of Chicago Data Portal, Crimes - 2001 to Present, dataset ID ijzp-q8t2, https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2. Data provided by the City of Chicago / Chicago Police Department. Portal lists access as public and refers to its Terms of Use rather than naming a standard open-data license. 2026 year-to-date snapshot retrieved 2026-11-01; see data/README.md for fields, query, and caveats.
-#   c h i c a g o C r i m e 
- 
- 
+Overall, the project meets the academic objective of demonstrating data preprocessing, exploratory data analysis, statistical summaries, and visualization using Python, while providing a reusable foundation for further analytical work.
