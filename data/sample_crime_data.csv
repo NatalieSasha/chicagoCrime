@@ -1,0 +1,17 @@
+incident_id,date,category,description,area,latitude,longitude
+S001,2024-01-03 08:15,Theft,Property theft,Central,28.6139,77.2090
+S002,2024-01-03 18:30,Assault,Physical assault,North,28.7041,77.1025
+S003,2024-01-04 21:00,Theft,Property theft,Central,28.6200,77.2150
+S004,2024-01-06 10:20,Fraud,Financial fraud,South,28.5355,77.2410
+S005,2024-01-07 14:05,Vehicle Crime,Vehicle-related,West,28.6562,77.2410
+S006,2024-01-08 09:45,Assault,Physical assault,North,28.7100,77.1100
+S007,2024-02-02 22:10,Theft,Property theft,East,28.6500,77.3000
+S008,2024-02-11 13:10,Fraud,Financial fraud,South,28.5300,77.2300
+S009,2024-03-01 06:40,Theft,Property theft,Central,28.6150,77.2100
+S010,2024-03-09 19:50,Vehicle Crime,Vehicle-related,West,28.6600,77.2500
+S011,2024-03-16 12:00,Assault,Physical assault,North,28.7050,77.1000
+S012,2024-03-24 16:35,Theft,Property theft,East,28.6450,77.2950
+S013,2024-04-03 07:20,Fraud,Financial fraud,Central,28.6180,77.2080
+S014,2024-04-13 20:25,Theft,Property theft,South,28.5400,77.2450
+S015,2024-04-21 11:15,Assault,Physical assault,West,28.6550,77.2380
+S016,2024-05-05 23:30,Theft,Property theft,East,28.6520,77.3020

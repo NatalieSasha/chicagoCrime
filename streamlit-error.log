@@ -1,0 +1,494 @@
+2026-11-01 18:25:36.128 Uvicorn server started on :::8501
+2026-11-01 18:26:17.206 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 136, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 924, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\app.py", line 49, in <module>
+    if len(top): st.plotly_chart(px.bar(top.head(12).sort_values().reset_index(name="count"),x="count",y="index",orientation="h",labels={"index":"Category","count":"Records"},title="Most frequent categories"),use_container_width=True)
+                                 ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\plotly\express\_chart_types.py", line 390, in bar
+    return make_figure(
+        args=locals(),
+    ...<2 lines>...
+        layout_patch=dict(barmode=barmode),
+    )
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\plotly\express\_core.py", line 2533, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\plotly\express\_core.py", line 1779, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        args,
+        ^^^^^
+    ...<4 lines>...
+        native_namespace,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\plotly\express\_core.py", line 1380, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['category', 'count'] but received: index
+ To use the index, pass it in directly as `df.index`.
+2026-11-01 18:26:17.733 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 136, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 924, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\app.py", line 49, in <module>
+    if len(top): st.plotly_chart(px.bar(top.head(12).sort_values().reset_index(name="count"),x="count",y="index",orientation="h",labels={"index":"Category","count":"Records"},title="Most frequent categories"),use_container_width=True)
+                                 ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\plotly\express\_chart_types.py", line 390, in bar
+    return make_figure(
+        args=locals(),
+    ...<2 lines>...
+        layout_patch=dict(barmode=barmode),
+    )
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\plotly\express\_core.py", line 2533, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\plotly\express\_core.py", line 1779, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        args,
+        ^^^^^
+    ...<4 lines>...
+        native_namespace,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\plotly\express\_core.py", line 1380, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['category', 'count'] but received: index
+ To use the index, pass it in directly as `df.index`.
+Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Users\natalie sasha\AppData\Local\Programs\Python\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\natalie sasha\AppData\Local\Programs\Python\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-11-01 18:27:03.510 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.538 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.557 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.581 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.609 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.627 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.649 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.674 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.703 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.730 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.736 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.756 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:03.759 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.059 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.081 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.101 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.114 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.138 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.201 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.218 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.237 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.260 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.286 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.294 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.311 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:27:12.313 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:15.582 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:15.614 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:15.644 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:36.694 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:36.722 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:36.741 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:36.782 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:39.746 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:39.776 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:39.817 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:39.851 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:39.890 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:39.931 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:53.651 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:53.715 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:30:53.750 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:04.043 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:04.203 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:04.340 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:04.503 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:13.772 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:13.833 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:13.876 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:13.961 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:13.997 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:14.062 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:14.873 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:14.878 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:14.927 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:14.951 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:21.340 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:21.342 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\streamlit\dataframe_util.py", line 957, in convert_pandas_df_to_arrow_table
+    return pa.Table.from_pandas(df, preserve_index=preserve_index)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 4777, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 658, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 643, in convert_column
+    raise e
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 637, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 414, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 97, in pyarrow.lib._ndarray_to_array
+    check_status(NdarrayToArrow(pool, values, mask, from_pandas,
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: ("Could not convert Timestamp('2024-01-03 08:15:00') with type Timestamp: tried to convert to int64", 'Conversion failed for column Value with type object')
+2026-11-01 18:31:21.390 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:21.783 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:21.812 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:31:28.862 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-01 18:33:47.173 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\streamlit\dataframe_util.py", line 957, in convert_pandas_df_to_arrow_table
+    return pa.Table.from_pandas(df, preserve_index=preserve_index)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 4777, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 658, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 643, in convert_column
+    raise e
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 637, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 414, in pyarrow.lib.array
+    result = _ndarray_to_array(values, mask, type, c_from_pandas, safe,
+  File "pyarrow/array.pxi", line 97, in pyarrow.lib._ndarray_to_array
+    check_status(NdarrayToArrow(pool, values, mask, from_pandas,
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: ("Could not convert '2024-01-03T08:15:00' with type str: tried to convert to int64", 'Conversion failed for column Value with type object')
+2026-11-01 18:43:45.380 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\streamlit\dataframe_util.py", line 957, in convert_pandas_df_to_arrow_table
+    return pa.Table.from_pandas(df, preserve_index=preserve_index)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 4777, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 658, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 643, in convert_column
+    raise e
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 637, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 414, in pyarrow.lib.array
+    result = _ndarray_to_array(values, mask, type, c_from_pandas, safe,
+  File "pyarrow/array.pxi", line 97, in pyarrow.lib._ndarray_to_array
+    check_status(NdarrayToArrow(pool, values, mask, from_pandas,
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: ("Could not convert '2026-01-01T00:00:00' with type str: tried to convert to int64", 'Conversion failed for column Value with type object')
+Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Users\natalie sasha\AppData\Local\Programs\Python\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\natalie sasha\AppData\Local\Programs\Python\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-11-01 18:49:58.015 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\streamlit\dataframe_util.py", line 957, in convert_pandas_df_to_arrow_table
+    return pa.Table.from_pandas(df, preserve_index=preserve_index)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 4777, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 658, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 643, in convert_column
+    raise e
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 637, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 414, in pyarrow.lib.array
+    result = _ndarray_to_array(values, mask, type, c_from_pandas, safe,
+  File "pyarrow/array.pxi", line 97, in pyarrow.lib._ndarray_to_array
+    check_status(NdarrayToArrow(pool, values, mask, from_pandas,
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: ("Could not convert '2026-01-01T00:00:00' with type str: tried to convert to int64", 'Conversion failed for column Value with type object')
+2026-11-01 19:10:11.094 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\streamlit\dataframe_util.py", line 957, in convert_pandas_df_to_arrow_table
+    return pa.Table.from_pandas(df, preserve_index=preserve_index)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 4777, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 658, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 643, in convert_column
+    raise e
+  File "C:\Users\natalie sasha\Desktop\Crime Data Analysis\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 637, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 414, in pyarrow.lib.array
+    result = _ndarray_to_array(values, mask, type, c_from_pandas, safe,
+  File "pyarrow/array.pxi", line 97, in pyarrow.lib._ndarray_to_array
+    check_status(NdarrayToArrow(pool, values, mask, from_pandas,
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: ("Could not convert '2026-01-01T00:00:00' with type str: tried to convert to int64", 'Conversion failed for column Value with type object')
+Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Users\natalie sasha\AppData\Local\Programs\Python\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\natalie sasha\AppData\Local\Programs\Python\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
